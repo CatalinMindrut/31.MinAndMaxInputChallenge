@@ -8,9 +8,11 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int min = 0;
-        int max = 0;
-        boolean first = true;
+//        int min = 2147483647; //set the min value to the maximum value an int can hold
+        int max = Integer.MAX_VALUE; // same thing, using constants
+//        int max = -2147483648; //set the min value to the minimum value an int can hold
+        int min = Integer.MIN_VALUE; // same thing, using constants
+//        boolean first = true;
 
         while (true) {
             System.out.println("Enter number:");
@@ -19,11 +21,11 @@ public class Main {
             if (isAnInt) {
                 int number = scanner.nextInt();
 
-                if (first) {
-                    first = false;
-                    min = number;
-                    max = number;
-                }
+//                if (first) {
+//                    first = false;
+//                    min = number;
+//                    max = number;
+//                }
 
                 if (number > max) {
                     max = number;
